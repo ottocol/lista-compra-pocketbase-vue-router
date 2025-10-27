@@ -1,37 +1,27 @@
-# lista-compra-pocketbase-vue
+# lista-compra-pocketbase-vue-router
 
-This template should help get you started developing with Vue 3 in Vite.
+Ejemplo de la lista de la compra usando pocketbase en el backend y Vue con Vue-router en el frontend.
 
-## Recommended IDE Setup
+Para ver el uso del router:
 
-[VS Code](https://code.visualstudio.com/) + [Vue (Official)](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
+- En `src/router/index.js` tienes las rutas definidas. Cada ruta se asocia a un componente Vue. Ahí puedes ver también cómo chequea el router la autentificación para las rutas que la requieran (en nuestro caso solo `/lista`)
+- En `App.vue`, la etiqueta `<router-view/>` es la que hace que aparezca "lo que diga el router en este momento".
+- En `About.vue`tienes un ejemplo de cómo poner un enlace a una ruta del router con la etiqueta `<RouterLink/>`
 
-## Recommended Browser Setup
 
-- Chromium-based browsers (Chrome, Edge, Brave, etc.):
-  - [Vue.js devtools](https://chromewebstore.google.com/detail/vuejs-devtools/nhdogjmejiglipccpnnnanhbledajbpd) 
-  - [Turn on Custom Object Formatter in Chrome DevTools](http://bit.ly/object-formatters)
-- Firefox:
-  - [Vue.js devtools](https://addons.mozilla.org/en-US/firefox/addon/vue-js-devtools/)
-  - [Turn on Custom Object Formatter in Firefox DevTools](https://fxdx.dev/firefox-devtools-custom-object-formatters/)
-
-## Customize configuration
-
-See [Vite Configuration Reference](https://vite.dev/config/).
-
-## Project Setup
+##  Instalar
 
 ```sh
 npm install
 ```
 
-### Compile and Hot-Reload for Development
+### Modo desarrollo
 
 ```sh
 npm run dev
 ```
 
-### Compile and Minify for Production
+### Construir para modo producción
 
 ```sh
 npm run build
