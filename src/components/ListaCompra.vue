@@ -39,3 +39,13 @@
     </ul>
     <button @click="doLogout">Salir</button>
 </template>
+
+<style scoped>
+ul {
+    list-style-type: none;
+    padding: 0;
+    border: 2px solid #ddd;
+    border-radius: 4px;
+    overflow: hidden;
+}
+</style>

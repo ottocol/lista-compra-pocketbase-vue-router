@@ -18,7 +18,7 @@
 </script>
 
 <template>
-    <form id="login-form" @submit.prevent="doLogin">
+    <form @submit.prevent="doLogin">
         <h2>Iniciar sesión</h2>
         <label for="email">Correo electrónico:</label>
         <input type="email" name="email" required v-model="usuario.email">
@@ -33,3 +33,40 @@
         </RouterLink>  
     </form>
 </template>
+
+<style scoped>
+
+form {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+form h2 {
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+form label {
+    display: block;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+form button {
+    width: 100%;
+    margin-top: 10px;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="email"] {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin-bottom: 10px;
+}
+
+</style>

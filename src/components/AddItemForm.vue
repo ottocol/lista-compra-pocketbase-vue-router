@@ -12,5 +12,11 @@
 
 
 <style scoped>
-
+input {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin-bottom: 10px;
+}
 </style>
